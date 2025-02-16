@@ -1,0 +1,10 @@
+[
+  {
+    "name": "Next.js",
+    "dir": "scraped/nextjs.org"
+  },
+  {
+    "name": "LangChain.js",
+    "dir": "scraped/js.langchain.com"
+  }
+]
