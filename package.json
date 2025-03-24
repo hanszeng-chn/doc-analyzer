@@ -7,8 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "test": "ts-node --esm src/scripts/testChatHistory.ts",
-    "scrape": "node src/scripts/scrapeDoc.js"
+    "crawl": "node src/scripts/crawlDoc.js"
   },
   "dependencies": {
     "@ant-design/icons": "^5.5.2",
@@ -20,6 +19,7 @@
     "@langchain/openai": "^0.3.11",
     "@langchain/pinecone": "^0.1.2",
     "@langchain/textsplitters": "^0.1.0",
+    "@mozilla/readability": "^0.6.0",
     "@nlux/highlighter": "^2.17.1",
     "@nlux/react": "^2.17.1",
     "@nlux/themes": "^2.17.1",
@@ -29,13 +29,16 @@
     "dotenv": "^16.4.7",
     "faiss-node": "^0.5.1",
     "highlight.js": "^11.11.1",
+    "jsdom": "^26.0.0",
     "langchain": "^0.3.6",
     "langsmith": "^0.2.3",
     "mammoth": "^1.8.0",
     "next": "14.2.16",
+    "node-fetch": "^3.3.2",
     "react": "^18",
     "react-dom": "^18",
     "sass": "^1.83.0",
+    "turndown": "^7.2.0",
     "uuid": "^11.0.3",
     "zod": "^3.24.1"
   },
